@@ -1,0 +1,11 @@
+%p#notice= notice
+%p
+  %strong Product:
+  = @order.product
+  %br/
+  %strong Customer:
+  = @order.customer.name
+  %br/
+= link_to 'Edit', edit_order_path(@order)
+|
+\#{link_to 'Back', orders_path}
